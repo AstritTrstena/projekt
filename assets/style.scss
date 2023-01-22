@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import 'variables';
+@import 'base';
+
+body{
+    scroll-behavior: smooth;
+    width: 100%;
+}
+.full{
+    max-width: 1650px;
+    margin-inline: 2rem;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    .container{
+        position: fixed;
+        background-color: $cwhite;
+        padding: 0 70px 0 70px;
+        overflow: hidden;
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9;
+    }
+    .content{
+        display: inline-flex;
+        align-items: center;
+    }
+    #menui{
+        display: none ;
+    }
+    .h1{
+        
+        align-items: center;
+        color: orange;
+        font-size: 70px;
+        font-family: 'Amatic SC', sans-serif;
+    }
+    .logo {
+        height: 60px;
+        width:60px;
+    }
+    .menu ul li 
+    {
+        font-family: $bodyfont;
+        padding: 10px;
+        letter-spacing: 3px;
+        font-size:25px;
+        display:inline-flex;
+        text-decoration: none;
+    }
+    a.home{
+        color: crimson;
+        font-size: 25px;
+        scroll-behavior: smooth;
+        transition: .3s all ease-in-out;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: crimson;
+    }
+}
+
+.main{
+    display: flex;
+    border-radius: 40px;
+    background-color: lightgray;
+    width: 1500px;
+    height: 1000px;
+    margin:200px auto;
+
+    .container{
+        display: inline-flex;
+        background: url(/assets/images/couple-hugging-laughing-near-wall.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size:cover;
+    
+        
+        .content {
+            margin-left: 80px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: $tfont;
+            font-size:50px;
+            button { 
+                border-color: transparent;
+                border-radius: 20px;
+                padding: 20px;
+                font-family: $tfont;
+                font-size:40px;
+                background-color: rgb(207, 44, 44);
+            }
+            .btn a{
+                color: white;
+                text-decoration: none;
+            }
+            button:hover{
+                background-color: rgb(180, 199, 7);
+                transition: .5s all ease-in-out;
+            }
+        }
+    }
+
+}
+.save{
+
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgb(255, 95, 3) 50%);
+    display: flex;
+    width: 300px;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    margin: 700px 50px 500px 500px;
+    text-align: right;
+    border-radius: 20px;
+
+    span{
+        padding: 20px;
+        color: white;
+        font-family: $tfont;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .date{
+        color:black;
+        font-family: $bodyfont;
+        font-size: 35px;
+    }
+
+}
+.lovestory{
+        display: flex;
+        width: 1500px;
+        height: 70vh;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 400px auto 0 0;
+        h3{
+            margin: 50px 0px 0px 0px ;
+            font-size: 50px;
+        }
+        
+        img{
+            border-radius: 10px;
+            display: block;
+            width: 380px;
+            height: auto;
+        }
+        #img
+        {
+            width: 400px;
+            height: auto;
+        }
+        p{
+            margin: auto 20px;
+            width: 290px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            font-family: $bodyfont
+        }
+        
+        h4{
+            font-size:60px;
+            margin: 40px 20px 20px;
+        }
+        .container{
+            padding:100px 0 100px 0;
+            width: 1500px;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    .content{
+        height: 100%;
+        width: 1500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .girl{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .man{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+        }
+        #lt{
+            font-family: $bodyfont;
+            font-size: 25px;
+            margin-top: 30px;
+            font-weight: 100;
+        }
+        .icons{
+            display: inline-flex;
+            justify-content: space-evenly;
+            width: 200px;
+            align-items: center;
+            padding: 50px 20px;
+            
+        }
+    }
+    
+}
+.thewedding{
+    margin-top: 100px;
+    background-color: $clightgrey;
+    width:100%;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        padding: 0;
+        margin: 0 auto 0 ;
+    }
+    .grid{
+        margin: 0 auto;
+        width: 1500px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        gap: 10px;
+    }
+    .thumbnail{
+        width: 480px;
+        height: 300px;
+        border-radius: 20px;
+        &:hover{
+            transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            border-radius: 30px;
+            transition: all 0.6s ease-in-out;
+        }
+    }
+    iframe{
+        border-radius: 20px;
+        width: 480px;
+        height: 350px;
+    }
+    h4{
+        margin-top: 20px;
+        font-size: 40px;
+    }
+    p{
+        padding-top: 20px;
+        color: grey;
+        font-family: $bodyfont;
+        font-size: 30px;
+    }
+}
+.grandbride{
+    padding: 20px 0px 80px 0;
+    width: 1500px;
+    margin: 0 auto;
+    h3{
+        font-size:60px;
+    }
+    .container{
+        flex-wrap: no-wrap;
+        display: flex;
+    }
+    .grid{
+        width: 800px;
+        height: 70vh;
+        margin: 0 auto;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+    .img{
+        margin: 0px 80px 0px 0px;
+        border-radius: 20px;
+        width: 650px;
+        height: 450px;
+    }
+    p{ 
+        width: 500px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-top: 50px;
+        color: grey;
+        font-family: $bodyfont;
+        font-size: 40px;
+        margin-top: 120px;
+    }
+    .side 
+    h4{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        font-size: 60px;
+        margin:100px 0px 0px 0px;
+        #br{
+            color: black;
+        }
+        img{
+            margin: 0 0 0 0px;
+            display: grid;
+            margin-right: 0px;
+            width: 80px;
+            height: 200px;
+        }
+        a{
+            color: orange;
+            text-decoration: none;
+        }
+    }
+    .kevin{
+        font-size: 60px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .wilson{
+        font-size: 60px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .wilsonp{
+        margin-top: 120px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .who{
+        font-family: $bodyfont;
+        font-size: 20px;
+        color: grey;
+    }
+} 
+.gallery{
+    background-color: $clightgrey;
+    padding: 1px 0 100px 0;
+    margin: 100px auto 0 auto;
+    .grid-container{
+        margin: 0px auto;
+        width: 1500px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 15px;
+        border-radius: 10px;
+        
+        .img img{
+            width: 500px;
+            height: 578px;
+            border-radius: 10px;
+        }
+        img{
+            width: 500px;
+            height: 284px;
+            border-radius: 10px;
+        }
+        .item1{
+            grid-column: 1/2;
+            grid-row: 1/3;
+            width: 500px;
+            height: 578px;
+        }
+        .item2{
+            width: 500px;
+            height: 284px;
+        }
+        .item3{ 
+            width: 500px;
+            height: 284px;
+        }
+        .item4{
+            grid-column: 3/4;
+            grid-row: 1/5;
+            width: 500px;
+            height: 578px;
+        }
+        .item5{
+            width: 500px;
+            height: 284px;
+        }
+        .item6{
+            width: 500px;
+            height: 284px;
+        }
+        .item7{
+            grid-column: 2/3;
+            grid-row: 3/5;
+            width: 500px;
+            height: 578px;
+        }
+        .item8{
+            grid-column: 3/4;
+            grid-row: 3/4;
+            width: 500px;
+            height: 284px;
+        }
+        .item9{
+            grid-column: 3/4;
+            grid-row: 4/5;
+            width: 500px;
+            height: 284px;
+        }
+    }
+    
+    
+}
+
+.getintouch{
+    background-color: $clightgrey;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 150px 0px;
+    justify-content: center;
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    h4{
+        margin-bottom: 30px;
+        font-size: 60px;
+        color: black;
+    }
+    
+    .content{
+        margin: 0 auto;
+        width: 1500px;
+        padding: 30px auto;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        font-size: 30px;
+    }
+}
+.rsvp{
+    margin: 0 auto;
+    padding: 50px auto 50px;
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/closeup-shot-newlywed-couple-sitting-bench.jpg);
+    display: flex;
+    align-items: center;
+
+    .container{
+        width: 1500px;
+        height: 100%;
+        background-size: cover;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .content{
+        margin: 0 auto;
+        background-color: #fff;
+        width: 1500px;
+        height: 900px;
+        padding: 0 0 20px 0;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        h4{
+            font-size: 50px;
+            margin: 0 490px 0 0;
+            padding: 0;
+            #rsvpt{
+                font-size: 40px;
+                color: $cgrey;
+            }
+        }
+    }
+    .form-grid{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+        row-gap: 20px;
+        column-gap: 20px ;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    h3{
+        margin: 50px auto 0;
+        padding: 0;
+        font-size: 70px;
+    }
+    
+    .message{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: span 3;
+        justify-content: flex-end;
+    }
+    .send{
+        color: white;
+        background-color: rgb(207, 44, 44);
+        cursor: pointer;
+        border-color:transparent;
+        margin: 0 auto 20px;
+        width: 300px;
+        height: 100px;
+        border-radius: 20px;
+        font-family: $tfont;
+        font-size:40px;
+        grid-column: 1/4;
+        text-align: center;
+    }
+    ::placeholder{
+        text-align: justify;
+        margin: 0 auto;
+        font-family: $bodyfont;
+        font-size: 30px;
+        font-weight:590;
+        color: $cgrey;
+    }
+    .g{
+        background-color: transparent;
+        text-align: justify;
+        margin: 0 auto;
+        font-family: $bodyfont;
+        font-size: 25px;
+        font-weight: bold;
+        color: $cgrey;
+    }
+    input#fname{
+        width: 100%;
+        height: 80px;
+        border-radius: 6px;
+        border: 1px solid rgb(0, 0, 0);
+        padding:0 15px;
+    }
+    input#email{
+        width: 100%;
+        height: 80px;
+        border-radius: 6px;
+        border: 1px solid rgb(0, 0, 0);
+        padding:0 15px;
+    }
+    select#guest{
+        width: 100%;
+        height: 80px;
+        border-radius: 6px;
+        border: 1px solid rgb(0, 0, 0);
+        padding:0 15px;
+    }
+    .send:hover{
+        background-color: rgb(180, 199, 7);
+        transition: .5s all ease-in-out;
+    }
+}
+
+.footer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:
+    linear-gradient( rgba(100, 60, 14, 0.7), rgba(122, 92, 66, 0.788)),
+    url('/assets/images/young-asian-pregnant-couple-using-laptop.jpeg');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    .content{
+        display: inline-flex;
+        align-items: center;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .h1{
+        align-items: center;
+        color: white;
+        font-size: 70px;
+        font-family: 'Amatic SC', sans-serif;
+    }
+    #logo{
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width:60px;
+        background-image: url(/assets//images/Untitled-1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-clip: content-box;   
+}
+}
+
+@media only screen and (max-width: 760px) {
+    body{
+        scroll-behavior: smooth;
+        width: 100%;
+    }
+    .full{
+        max-width: 600px;
+        margin-inline: 2.1rem;
+        margin: 0 auto;
+    }
+    .header{
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        #menui{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 20px 0 0;
+        }
+        .menu{
+            display: none;
+        }
+    }
+    .main{
+        display: flex;
+        border-radius: 40px;
+        background-color: lightgray;
+        width: 100%;
+        height: 80vh;
+        margin:150px auto;
+    
+        .container{
+            width: 100%;
+            height: 100%;
+            display: inline-flex;
+            background: url(/assets/images/couple-hugging-laughing-near-wall.png);
+            background-repeat: no-repeat;
+            background-position:bottom right;
+            background-size:contain;
+            
+            .content {
+                width: 100px;
+                margin: auto auto 500px auto;
+                display:inline;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                font-family: $tfont;
+                font-size:30px;
+                button { 
+                    border-color: transparent;
+                    border-radius: 3px;
+                    padding: 2px;
+                    font-family: $tfont;
+                    font-size:20px;
+                    background-color: rgb(207, 44, 44);
+                }
+                .btn a{
+                    color: white;
+                    text-decoration: none;
+                }
+                button:hover{
+                    background-color: rgb(180, 199, 7);
+                    transition: .5s all ease-in-out;
+                }
+            }
+        }
+    
+    }
+    .save{
+    
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgb(255, 95, 3) 50%);
+        display: flex;
+        width: 200px;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+        text-align: right;
+        border-radius: 20px;
+        margin: 700px 900px 0px 0px;
+    
+        span{
+            padding: 10px;
+            color: white;
+            font-family: $tfont;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .date{
+            color:black;
+            font-family: $bodyfont;
+            font-size: 20px;
+        }
+    
+    }
+}
