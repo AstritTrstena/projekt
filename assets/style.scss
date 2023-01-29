@@ -727,10 +727,13 @@ body {
 
     .header {
         width: 100%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: flex-start;
-
+        height: auto;
+        .container{
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+        }
         #menui {
             display: flex;
             justify-content: space-between;
@@ -740,6 +743,7 @@ body {
         .menu {
             display: none;
         }
+        
     }
 
     .main {
@@ -774,13 +778,14 @@ body {
 
                 button {
                     width: 40%;
-                    height: 50px;
+                    height: auto;
                     border-color: transparent;
                     border-radius: 10px;
                     padding: 2px;
                     font-family: $tfont;
                     font-size: 20px;
                     background-color: rgb(207, 44, 44);
+                    margin: 0 0 0 30px;
                 }
 
                 .btn a {
@@ -790,8 +795,12 @@ body {
                 }
 
                 h2 {
-                    width: 400px;
-                    margin: 0 auto 200px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    font-size: 35px;
+                    margin: 0 0 200px 40px;
+                    
                 }
 
                 button:hover {
@@ -815,7 +824,7 @@ body {
         align-items: center;
         text-align: right;
         border-radius: 20px;
-        margin: 450px 20px 0 0;
+        margin: 330px 20px 0 0;
 
         span {
             padding: 10px;
@@ -834,21 +843,41 @@ body {
     }
 
     .lovestory {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        height: 150vh;
-        margin: 0 auto;
+        height: auto;
 
         .container {
+            width: 100%;
             margin: 0 auto;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             .content {
-                display: grid;
+                width: 100%;
+                height: auto;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                .girl {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #img{
+                    margin: 50px auto;
+                }
+                #imgg{
+                    margin: 100px auto 0;
+                }
+                .man {
+                    display: flex;
+                    flex-direction: column;
+                }
 
                 //    display: flex;
                 //    flex-direction: column;
@@ -903,7 +932,7 @@ body {
         height: auto;
         display: flex;
         flex-direction: column;
-        
+
         img {
             display: inline-flex;
         }
@@ -913,16 +942,19 @@ body {
             display: flex;
             flex-direction: column;
         }
-        .content{
+
+        .content {
             width: 100%;
             height: auto;
             display: inline-flex;
             flex-wrap: wrap;
-            .side{
+
+            .side {
                 display: inline-flex;
                 flex-direction: column;
             }
         }
+
         .grid {
             width: 100%;
             height: auto;
@@ -961,7 +993,8 @@ body {
             width: 100%;
             height: auto;
         }
-        .g{
+
+        .g {
             margin: 100px auto;
         }
     }
@@ -978,20 +1011,23 @@ body {
             width: 100%;
             height: auto;
             background-size: cover;
-            h3{
-                
+
+            h3 {
+
                 font-size: 45px;
             }
+
             h4 {
                 font-weight: bolder;
                 width: 80%;
                 font-size: 30px;
                 margin: 0 0 30px 20px;
-            #rsvpt{
-                font-weight: bold;
-                font-size: 30px;
+
+                #rsvpt {
+                    font-weight: bold;
+                    font-size: 30px;
+                }
             }
-        }
         }
 
         .content {
@@ -999,7 +1035,8 @@ body {
             justify-content: center;
             align-items: center;
             width: 90%;
-            height: auto;;
+            height: auto;
+            ;
         }
 
         .form-grid {
@@ -1021,59 +1058,67 @@ body {
             .selectlist {
                 width: 100%;
             }
-            #message{
+
+            #message {
                 width: 100%;
                 height: auto;
             }
-            .send{
-               width: 70%;
-               height: auto;
-               #send{
-                width: 100%;
+
+            .send {
+                width: 70%;
                 height: auto;
-                margin: 10px auto ;
-               }
+
+                #send {
+                    width: 100%;
+                    height: auto;
+                    margin: 10px auto;
+                }
             }
 
         }
     }
-    .getintouch{
+
+    .getintouch {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-    
-        .container{
+
+        .container {
             width: 100%;
             display: flex;
             margin: 50px auto;
             flex-direction: column;
             align-items: center;
         }
-        .content{
+
+        .content {
             width: 100%;
             height: auto;
             display: inline-flex;
             align-items: flex-start;
             padding: 10px auto 10px;
             justify-content: center;
-            h4{
+
+            h4 {
                 justify-content: center;
                 padding: 0 auto;
                 margin: 0 auto 20px;
                 width: 100%;
                 font-size: 40px;
             }
-            p{
+
+            p {
                 padding: 10px;
                 width: 100%;
                 font-size: 20px;
             }
-            .contact{
+
+            .contact {
                 width: 100%;
                 height: auto;
                 margin: 0 auto;
             }
         }
-}
+    }
 }
