@@ -41,15 +41,14 @@ img:hover {
   transition: all 0.6s ease-in-out;
 }
 
+.thewedding .gallery .getintouch {
+  background-color: rgba(241, 241, 241, 0.6);
+  width: 1800px;
+}
+
 body {
   scroll-behavior: smooth;
   width: 100%;
-}
-
-.full {
-  max-width: 1650px;
-  margin-inline: 2rem;
-  margin: 0 auto;
 }
 
 .header {
@@ -276,7 +275,8 @@ body {
   border-radius: 20px;
 }
 .thewedding .thumbnail:hover {
-  transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.03);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   border-radius: 30px;
   transition: all 0.6s ease-in-out;
 }
@@ -297,7 +297,7 @@ body {
 }
 
 .grandbride {
-  padding: 20px 0px 80px 0;
+  padding: 70px 0 0 0;
   width: 1500px;
   margin: 0 auto;
 }
@@ -305,20 +305,25 @@ body {
   font-size: 60px;
 }
 .grandbride .container {
+  margin: 0 auto;
+  height: 80vh;
+  width: 1500px;
   flex-wrap: no-wrap;
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .grandbride .grid {
-  width: 800px;
-  height: 70vh;
+  width: 1500px;
+  height: 60vh;
   margin: 0 auto;
-  gap: 20px;
+  gap: 10px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
 }
 .grandbride .img {
-  margin: 0px 80px 0px 0px;
+  margin: 0px 30px 0px 0px;
   border-radius: 20px;
   width: 650px;
   height: 450px;
@@ -349,10 +354,13 @@ body {
   margin: 0 0 0 0px;
   display: grid;
   margin-right: 0px;
-  width: 80px;
+  width: 50px;
   height: 200px;
 }
 .grandbride .side h4 a {
+  padding-bottom: 50px;
+  justify-self: top;
+  width: 210px;
   color: orange;
   text-decoration: none;
 }
@@ -654,8 +662,11 @@ body {
     width: 100%;
   }
   .full {
-    max-width: 600px;
-    margin-inline: 2.1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
     margin: 0 auto;
   }
   .header {
@@ -677,12 +688,14 @@ body {
     border-radius: 40px;
     background-color: lightgray;
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     margin: 150px auto;
   }
   .main .container {
+    margin: 0 auto;
     width: 100%;
-    height: 100%;
+    height: 50vh;
+    justify-content: space-between;
     display: inline-flex;
     background: url(/assets/images/couple-hugging-laughing-near-wall.png);
     background-repeat: no-repeat;
@@ -690,8 +703,8 @@ body {
     background-size: contain;
   }
   .main .container .content {
-    width: 100px;
-    margin: auto auto 500px auto;
+    width: 100%;
+    margin: auto;
     display: inline;
     flex-direction: column;
     justify-content: center;
@@ -701,16 +714,23 @@ body {
     font-size: 30px;
   }
   .main .container .content button {
+    width: 40%;
+    height: 50px;
     border-color: transparent;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 2px;
     font-family: "Amatic SC";
     font-size: 20px;
     background-color: rgb(207, 44, 44);
   }
   .main .container .content .btn a {
+    margin-bottom: 10px;
     color: white;
     text-decoration: none;
+  }
+  .main .container .content h2 {
+    width: 400px;
+    margin: 0 auto 200px 30px;
   }
   .main .container .content button:hover {
     background-color: rgb(180, 199, 7);
@@ -719,14 +739,15 @@ body {
   .save {
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgb(255, 255, 255) 50%, rgb(255, 95, 3) 50%);
-    display: flex;
+    display: inline-flex;
     width: 200px;
     height: 100px;
+    justify-self: center;
     flex-direction: column;
     align-items: center;
     text-align: right;
     border-radius: 20px;
-    margin: 700px 900px 0px 0px;
+    margin: 450px 20px 0 0;
   }
   .save span {
     padding: 10px;
@@ -739,5 +760,212 @@ body {
     color: black;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 20px;
+  }
+  .lovestory {
+    width: 100%;
+    height: 150vh;
+    margin: 0 auto;
+  }
+  .lovestory .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .lovestory .container .content {
+    display: grid;
+  }
+  .lovestory .container .content h4 {
+    margin: 0px auto;
+    display: grid;
+  }
+  .lovestory .container .content h4 p {
+    display: grid;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .lovestory .container .content h4 p .icons {
+    display: grid;
+  }
+  .thewedding {
+    background-color: rgba(241, 241, 241, 0.6);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 800px auto 0;
+  }
+  .thewedding h3 {
+    margin: 200px auto 0;
+  }
+  .thewedding .grid {
+    height: auto;
+    padding-left: 70px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .grandbride {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .grandbride img {
+    display: inline-flex;
+  }
+  .grandbride .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .grandbride .content {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  .grandbride .content .side {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .grandbride .grid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .grandbride .grid .kevin {
+    display: flex;
+    flex-direction: column;
+  }
+  .grandbride .grid p {
+    margin: 0;
+  }
+  .gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery h3 {
+    margin: 0 auto;
+  }
+  .gallery .grid-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .gallery .g {
+    margin: 100px auto;
+  }
+  .rsvpp {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+  }
+  .rsvpp .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  .rsvpp .container h3 {
+    font-size: 45px;
+  }
+  .rsvpp .container h4 {
+    font-weight: bolder;
+    width: 80%;
+    font-size: 30px;
+    margin: 0 0 30px 20px;
+  }
+  .rsvpp .container h4 #rsvpt {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .rsvpp .content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+  }
+  .rsvpp .form-grid {
+    width: 80%;
+    height: auto;
+    align-content: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .rsvpp .form-grid .name {
+    width: 100%;
+  }
+  .rsvpp .form-grid .email {
+    width: 100%;
+  }
+  .rsvpp .form-grid .selectlist {
+    width: 100%;
+  }
+  .rsvpp .form-grid #message {
+    width: 100%;
+    height: auto;
+  }
+  .rsvpp .form-grid .send {
+    width: 70%;
+    height: auto;
+  }
+  .rsvpp .form-grid .send #send {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+  .getintouch {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .getintouch .container {
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .getintouch .content {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 10px auto 10px;
+    justify-content: center;
+  }
+  .getintouch .content h4 {
+    justify-content: center;
+    padding: 0 auto;
+    margin: 0 auto 20px;
+    width: 100%;
+    font-size: 40px;
+  }
+  .getintouch .content p {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+  }
+  .getintouch .content .contact {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */
