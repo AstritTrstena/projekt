@@ -726,14 +726,17 @@ body {
     }
 
     .header {
+        margin: 50px auto 0;
         width: 100%;
         height: auto;
-        .container{
+
+        .container {
             display: flex;
             width: 100%;
             height: auto;
             justify-content: center;
         }
+
         #menui {
             display: flex;
             justify-content: space-between;
@@ -743,7 +746,7 @@ body {
         .menu {
             display: none;
         }
-        
+
     }
 
     .main {
@@ -800,7 +803,7 @@ body {
                     width: 100%;
                     font-size: 35px;
                     margin: 0 0 200px 40px;
-                    
+
                 }
 
                 button:hover {
@@ -851,36 +854,38 @@ body {
         .container {
             width: 100%;
             margin: 0 auto;
-            display: flex;
+            display: finline-lex;
             justify-content: center;
             align-items: center;
 
             .content {
                 width: 100%;
-                height: auto;
                 display: inline-flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
+                h3 {
+                    margin: 0 auto;
+                }
 
                 .girl {
                     display: flex;
                     flex-direction: column;
                 }
-                #img{
-                    margin: 50px auto;
+
+                #img {
+                    margin: 0px auto;
                 }
-                #imgg{
+
+                #imgg {
                     margin: 100px auto 0;
                 }
+
                 .man {
                     display: flex;
                     flex-direction: column;
                 }
-
-                //    display: flex;
-                //    flex-direction: column;
 
                 h4 {
                     margin: 0px auto;
@@ -952,6 +957,8 @@ body {
             .side {
                 display: inline-flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
 

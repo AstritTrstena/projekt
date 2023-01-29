@@ -670,6 +670,7 @@ body {
     margin: 0 auto;
   }
   .header {
+    margin: 50px auto 0;
     width: 100%;
     height: auto;
   }
@@ -778,24 +779,26 @@ body {
   .lovestory .container {
     width: 100%;
     margin: 0 auto;
-    display: flex;
+    display: finline-lex;
     justify-content: center;
     align-items: center;
   }
   .lovestory .container .content {
     width: 100%;
-    height: auto;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .lovestory .container .content h3 {
+    margin: 0 auto;
   }
   .lovestory .container .content .girl {
     display: flex;
     flex-direction: column;
   }
   .lovestory .container .content #img {
-    margin: 50px auto;
+    margin: 0px auto;
   }
   .lovestory .container .content #imgg {
     margin: 100px auto 0;
@@ -862,6 +865,8 @@ body {
   .grandbride .content .side {
     display: inline-flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .grandbride .grid {
     width: 100%;
