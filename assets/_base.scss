@@ -1,22 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-h2{
+
+h2 {
     font-family: $tfont 'Amatic SC';
-    color:rgb(255, 94, 0);
+    color: rgb(255, 94, 0);
 }
-h3{
+
+h3 {
     margin: 130px auto 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family:$tfont;
-    color:orange;
-    font-size:50px;
+    font-family: $tfont;
+    color: orange;
+    font-size: 50px;
 
     span img {
         padding-bottom: 20px;
@@ -25,19 +27,44 @@ h3{
         width: 100px;
         background-repeat: no-repeat;
     }
-    
+
 }
-h4{
+
+h4 {
     font-family: $tfont;
     font-size: 30px;
 }
-img:hover{
-    transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+img:hover {
+    transform: scale(1.03);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     border-radius: 30px;
     transition: all 0.6s ease-in-out;
 }
-.thewedding .gallery .getintouch{
+
+.thewedding .gallery .getintouch {
     background-color: $clightgrey;
     width: 1800px;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #ff7800 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 100px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ff7800;
+    border-radius: 10px;
+    border: 10px solid #ffffff;
+}
